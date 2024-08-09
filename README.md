@@ -7,3 +7,6 @@ Fetches all the data and files from chEMBL for the drug interactions performed o
 ### QSAR2
 
 Calculates the lipinski descriptors for the molecule of interest and converts the IC50 values to the pIC50 value. Filters the sample between active compounds and inactive compounds. These features are further subjected to statistical analyses (Mann-Whitney tests) to assess the significance of each column. These are plotted and the final data frame of the significant columns are used for the further analyses.
+
+### QSAR3
+Reads the output of QSAR2 and makes a dataframe consisting chembl ID and the structure. Using these, two columns creates a .smi file on which padel is downloaded and run to obtain the molecule's finger printsfrom pubchem. The pIC50 is tagged with the fingerprints and then stored as the final output of this file.
