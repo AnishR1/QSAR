@@ -12,4 +12,4 @@ Calculates the lipinski descriptors for the molecule of interest and converts th
 Reads the output of QSAR2 and makes a dataframe consisting chembl ID and the structure. Using these, two columns creates a .smi file on which padel is downloaded and run to obtain the molecule's finger printsfrom pubchem. The pIC50 is tagged with the fingerprints and then stored as the final output of this file.
 
 ### QSAR4
-Takes the input of QSAR3 and divides the dataset into train and test sets. Then runs the machine learning algorithms to predict the pIC50 values. This also helps to understand how the predictions are made in comparison to the data through visualization.
+Takes the input of QSAR3 and divides the dataset into train and test sets. Then runs the machine learning algorithms to predict the pIC50 values. This also helps to understand how the predictions are made compared to the data through visualization.
